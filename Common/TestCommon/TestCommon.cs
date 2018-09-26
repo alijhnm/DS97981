@@ -14,7 +14,7 @@ namespace TestCommon
 
         public static void RunLocalTest(Func<string,string> Processor)
         {
-            Assert.IsTrue(Directory.Exists("TestData"));
+            Assert.IsTrue(Directory.Exists("../A1Tests2/TestData"));
             string[] inFiles = Directory.GetFiles("TestData", "*In_*.txt");
 
             Assert.IsTrue(inFiles.Length > 0 &&
