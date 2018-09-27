@@ -6,12 +6,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace A1.Tests
 {
     [TestClass()]
     public class ProgramTests
     {
+        [TestMethod()]
+        public void AddTest()
+        {
+            Assert.AreEqual(3, Program.Add(1, 2));
+        }
 
 
         [TestMethod(), Timeout(1000)]
@@ -19,12 +25,6 @@ namespace A1.Tests
         public void GradedTest()
         {
             TestTools.RunLocalTest(Program.Process);
-        }
-
-        [TestMethod()]
-        public void AddTest()
-        {
-            Assert.AreEqual(3, Program.Add(1, 2));
         }
     }
 }

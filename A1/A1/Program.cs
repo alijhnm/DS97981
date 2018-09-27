@@ -9,7 +9,7 @@ namespace A1
 {
     public class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
         }
 
@@ -26,9 +26,9 @@ namespace A1
             return sb.ToString();
         }
 
-        public static int Add(int firstNumber, int secondNumber)
+        public static int Add(int a, int b)
         {
-            return firstNumber + secondNumber;
+            return a + b;
         }
     }
 }
