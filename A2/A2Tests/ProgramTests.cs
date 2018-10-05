@@ -13,16 +13,16 @@ namespace A2.Tests
     public class ProgramTests
     {
         [TestMethod()]
-        [DeploymentItem("TestData", "TestData")]
+        [DeploymentItem("TestData", "A0_TestData")]
         public void GradedTest_Correctness()
         {
-            TestCommon.TestTools.RunLocalTest(Program.Process);
+            TestCommon.TestTools.RunLocalTest("A0", Program.Process);
         }
         [TestMethod(), Timeout(500)]
-        [DeploymentItem("TestData", "TestData")]
+        [DeploymentItem("TestData", "A0_TestData")]
         public void GradedTest_Performance()
         {
-            TestCommon.TestTools.RunLocalTest(Program.Process);
+            TestCommon.TestTools.RunLocalTest("A0", Program.Process);
         }
         [TestMethod()]
         public void GradedTest_Stress()
