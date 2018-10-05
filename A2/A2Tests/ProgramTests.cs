@@ -12,7 +12,7 @@ namespace A2.Tests
     [TestClass()]
     public class ProgramTests
     {
-        [TestMethod()]
+        [TestMethod(), Timeout(1000)]
         [DeploymentItem("TestData", "A2_TestData")]
         public void GradedTest_Correctness()
         {
