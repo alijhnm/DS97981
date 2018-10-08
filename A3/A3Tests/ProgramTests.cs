@@ -12,48 +12,56 @@ namespace A3.Tests
     [TestClass()]
     public class ProgramTests
     {
-        [TestMethod()]
+        [TestMethod(), Timeout(1000)]
+        [DeploymentItem("TestData", "A3_TestData")]
         public void Graded_FibonacciTest()
         {
             TestTools.RunLocalTest("A3", Program.ProcessFibonacci, "TD1");
         }
 
-        [TestMethod()]
+        [TestMethod(), Timeout(1000)]
+        [DeploymentItem("TestData", "A3_TestData")]
         public void Fibonacci_LastDigitTest()
         {
             TestTools.RunLocalTest("A3", Program.ProcessFibonacci_LastDigit, "TD2");
         }
-        [TestMethod()]
+        [TestMethod(), Timeout(1000)]
+        [DeploymentItem("TestData", "A3_TestData")]
         public void Graded_GCDTest()
         {
             TestTools.RunLocalTest("A3", Program.ProcessGCD, "TD3");
         }
 
-        [TestMethod()]
+        [TestMethod(), Timeout(1000)]
+        [DeploymentItem("TestData", "A3_TestData")]
         public void Graded_LCMTest()
         {
             TestTools.RunLocalTest("A3", Program.ProcessLCM, "TD4");
         }
-        [TestMethod()]
+        [TestMethod(), Timeout(1000)]
+        [DeploymentItem("TestData", "A3_TestData")]
 
         public void ProcessFibonacci_ModTest()
         {
             TestTools.RunLocalTest("A3", Program.ProcessFibonacci_Mod, "TD5");
         }
 
-        [TestMethod()]
+        [TestMethod(), Timeout(1000)]
+        [DeploymentItem("TestData", "A3_TestData")]
         public void ProcessFibonacci_SumTest()
         {
             TestTools.RunLocalTest("A3", Program.ProcessFibonacci_Sum, "TD6");
         }
 
-        [TestMethod()]
+        [TestMethod(), Timeout(1000)]
+        [DeploymentItem("TestData", "A3_TestData")]
         public void ProcessFibonacciPartialSumTest()
         {
             TestTools.RunLocalTest("A3", Program.ProcessFibonacci_Partial_Sum, "TD7");
         }
 
-        [TestMethod()]
+        [TestMethod(), Timeout(1000)]
+        [DeploymentItem("TestData", "A3_TestData")]
         public void Graded_FibonacciSumSquaresTest()
         {
             TestTools.RunLocalTest("A3", Program.ProcessFibonacci_Sum_Squares, "TD8");

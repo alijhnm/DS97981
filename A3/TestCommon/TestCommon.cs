@@ -14,8 +14,8 @@ namespace TestCommon
 
         public static void RunLocalTest(string AssignmentName, Func<string,string> Processor, string TestDataName=null)
         {
-            string testDataPath = "TestData";
-            //string testDataPath = $"{AssignmentName}_TestData";
+            //string testDataPath = "TestData";
+            string testDataPath = $"{AssignmentName}_TestData";
             if (!string.IsNullOrEmpty(TestDataName))
                 testDataPath = Path.Combine(testDataPath, TestDataName);
 
