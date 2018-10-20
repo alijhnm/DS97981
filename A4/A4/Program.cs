@@ -12,10 +12,6 @@ namespace A4
     {
         public static void Main(string[] args)
         {
-            StreamReader akbar = new StreamReader(".../../../A4Tests/TestData/TD4/In_3.txt");
-            string asghar = akbar.ReadToEnd();
-            Console.WriteLine(ProcessCollectingSignatures4(asghar));
-            Console.ReadKey();
         }
         public static long ChangingMoney1(long money)
         {
@@ -93,10 +89,6 @@ namespace A4
             {
                 for (int j = i + 1; j < partitions.Count(); j++)
                 {
-                    if (i == j)
-                    {
-                        continue;
-                    }
                     if (partitions[i].Item1 >= partitions[j].Item1 && partitions[i].Item2 <= partitions[j].Item2)
                     {
                         partitions.RemoveAt(j);
@@ -228,59 +220,5 @@ namespace A4
         }
         public static string ProcessMaximizeSalary6(string inStr) =>
             TestTools.Process(inStr, MaximizeSalary6);
-        /*
-         * List<long> indices = new List<long>();
-            for (int i = 0; i < tenantCount; i++)
-            {
-                indices.Add(i);
-            }
-
-            Dictionary<long, List<long>> XList = new Dictionary<long, List<long>>();
-
-            long firstPoint = startTimes.Min();
-            long lastPoint = endTimes.Max();
-
-            for (long point = firstPoint; point < lastPoint + 1; point++)
-            {
-                XList[point] = new List<long>();
-                for (long index = 0; index < tenantCount; index++)
-                {
-                   if (startTimes[index] <= point && point <= endTimes[index])
-                   {
-                        XList[point].Add(index);
-                   }
-                }
-            }
-            var X = XList.OrderByDescending(x => x.Value.Count());
-            
-            foreach (var x in X)
-            {
-                //Console.WriteLine("Key : " + x.Key + " # " + x.Value.Count());
-                for (int i = 0; i < x.Value.Count(); i++)
-                {
-                    //Console.Write(x.Value[i] + ", ");
-                }
-                //Console.WriteLine();
-            }
-            int result = 0;
-            for (int i = 0; i < X.Count(); i++)
-            {
-                List<long> partitions = X.ElementAt(i).Value;
-                for (int j = 0; j < partitions.Count(); j++)
-                {
-                    indices.Remove(partitions[j]);
-                    if (indices.Count() == 0)
-                    {
-                        break;
-                    }
-                }
-                if (indices.Count() == 0)
-                {
-                    result = i;
-                    break;
-                }
-            }
-            return result + 1;
-        }*/
         }
 }
