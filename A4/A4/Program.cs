@@ -219,6 +219,6 @@ namespace A4
             return result;
         }
         public static string ProcessMaximizeSalary6(string inStr) =>
-            TestTools.Process(inStr, (Func<long, long[], string>)MaximizeSalary6);
+            TestTools.Process(inStr, (Func<long, long[], string>) MaximizeSalary6);
         }
 }
