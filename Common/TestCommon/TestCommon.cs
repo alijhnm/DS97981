@@ -6,11 +6,11 @@ using System.Linq;
 
 namespace TestCommon
 {
-    public static class TestTools 
+    public static class TestTools
     {
         private static readonly char[] IgnoreChars = new char[] { '\n', '\r', ' ' };
 
-        public static void RunLocalTest(string AssignmentName, Func<string,string> Processor, string TestDataName=null)
+        public static void RunLocalTest(string AssignmentName, Func<string, string> Processor, string TestDataName = null)
         {
             string testDataPath = $"{AssignmentName}_TestData";
             if (!string.IsNullOrEmpty(TestDataName))
@@ -32,7 +32,7 @@ namespace TestCommon
                     string result = Processor(File.ReadAllText(inFile)).Trim(IgnoreChars);
                     string expectedResult = string.Join("\n", File.ReadAllLines(outFile)
                         .Select(line => line.Trim(IgnoreChars)) // Ignore white spaces 
-                        .Where(line => ! string.IsNullOrWhiteSpace(line))); // Ignore empty lines
+                        .Where(line => !string.IsNullOrWhiteSpace(line))); // Ignore empty lines
 
                     Assert.AreEqual(expectedResult, result);
                     Console.WriteLine($"Test Passed: {inFile}");
@@ -87,7 +87,7 @@ namespace TestCommon
         }
 
         public static string Process<_RetType>(
-            string inStr, 
+            string inStr,
             Func<long, long[], long[], _RetType> longProcessor)
         {
             List<long> list1 = new List<long>(),
@@ -113,7 +113,7 @@ namespace TestCommon
 
             firstLine = ReadParallelArray(inStr, list1, list2);
 
-            return string.Join("\n", 
+            return string.Join("\n",
                 longProcessor(firstLine, list1.ToArray(), list2.ToArray()));
         }
 
@@ -128,13 +128,13 @@ namespace TestCommon
 
                 long[] firstLine = new long[line.Length];
 
-                for (int i=0; i < line.Length; i++)
+                for (int i = 0; i < line.Length; i++)
                 {
                     firstLine[i] = long.Parse(line[i]);
                 }
 
-               line = reader.ReadLine().Split(new char[] { '\n', '\r', ' ' },
-                StringSplitOptions.RemoveEmptyEntries);
+                line = reader.ReadLine().Split(new char[] { '\n', '\r', ' ' },
+                 StringSplitOptions.RemoveEmptyEntries);
 
                 long[] secondLine = new long[line.Length];
                 for (int i = 0; i < line.Length; i++)
@@ -191,7 +191,7 @@ namespace TestCommon
             using (StringReader reader = new StringReader(inStr))
             {
                 firstLine = reader.ReadLine();
-                string[] toks = firstLine.Split(IgnoreChars, 
+                string[] toks = firstLine.Split(IgnoreChars,
                     StringSplitOptions.RemoveEmptyEntries);
 
                 list1 = toks.Select(long.Parse).ToArray();
@@ -208,7 +208,7 @@ namespace TestCommon
             }
 
             return string.Join("\n",
-                longProcessor(list1,list2.ToArray(),list3.ToArray()));
+                longProcessor(list1, list2.ToArray(), list3.ToArray()));
         }
 
         private static long ReadParallelArray(string inStr, List<long> list1, List<long> list2)
