@@ -25,9 +25,19 @@ namespace Q1
             };
         
         
-        public static string[] A(string[] s, int charCounter, int breakpoint, int[] phone)
+        public static List<string> A(List<string> s, int charCounter, int[] phone)
         {
-            if (s[0].Length == breakpoint)
+            if (s.Count() == 0)
+            {
+                char[] chars = D[phone[charCounter]];
+                List<string> result = new List<string>();
+                foreach(char ch in chars)
+                {
+                    result.Add(ch.ToString());
+                }
+                return A(result, charCounter + 1, phone);
+            }
+            else if (s[0].Length == phone.Length)
             {
                 return s;
             }
@@ -42,13 +52,15 @@ namespace Q1
                         result.Add(str + ch.ToString());
                     }
                 }
-                return A(result.ToArray(), charCounter + 1, breakpoint, phone); 
+                return A(result, charCounter + 1, phone); 
             }
         }
 
         public static string[] GetNames(int[] phone)
         {
-            return new string[] { "ali" };  
+            List<string> result = A(new List<string>() { }, 0, phone);
+            return result.ToArray();
+
         }
 
         static void Main(string[] args)
