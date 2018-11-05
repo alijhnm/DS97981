@@ -96,7 +96,7 @@ namespace Q1.Tests
                     actualCandidates);
             });
         }
-
+        
         [TestMethod, Timeout(5000)]
         public void Graded_SpellCheckTest()
         {
