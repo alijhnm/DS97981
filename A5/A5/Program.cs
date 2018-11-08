@@ -303,7 +303,7 @@ namespace A5
             return result;
         }
         public static string ProcessOrganizingLottery5(string inStr) =>
-            TestTools.Process(inStr, OrganizingLottery5);
+            TestTools.Process(inStr, (Func<long[] ,long[], long[], long[]>)OrganizingLottery5);
         
         public static double Distance(Tuple<long, long> point1, Tuple<long, long> point2)
         {

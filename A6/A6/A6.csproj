@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EBB95A7B-6834-458F-AA0F-327AB58102E5}</ProjectGuid>
+    <ProjectGuid>{303D841F-63AA-4A00-896C-588A2C3CAC6D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>A3</RootNamespace>
-    <AssemblyName>A3</AssemblyName>
+    <RootNamespace>A6</RootNamespace>
+    <AssemblyName>A6</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,19 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EditDistance.cs" />
+    <Compile Include="LCSOfThree.cs" />
+    <Compile Include="LCSOfTwo.cs" />
+    <Compile Include="MoneyChange.cs" />
+    <Compile Include="PrimitiveCalculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="MSTest.TestAdapter">
-      <Version>1.3.2</Version>
-    </PackageReference>
-    <PackageReference Include="MSTest.TestFramework">
-      <Version>1.3.2</Version>
-    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Common\TestCommon\TestCommon.csproj">
