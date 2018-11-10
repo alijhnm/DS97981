@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3918E738-3EFE-4D0C-B350-BA59C4BD3508}</ProjectGuid>
+    <ProjectGuid>{CB7EA028-0239-4C57-B4F5-03B1DEF2565C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>A5Tests</RootNamespace>
@@ -60,12 +60,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\Common\TestCommon\TestCommon.csproj">
       <Project>{c39ff0c4-6960-42ad-8e2c-d2cafe850a52}</Project>
       <Name>TestCommon</Name>
     </ProjectReference>
     <ProjectReference Include="..\A5\A5.csproj">
-      <Project>{CC230505-2F5A-44DB-AEC5-20631A36EEB1}</Project>
+      <Project>{22BA64BD-4F27-4A74-8A20-6ABF62159ABB}</Project>
       <Name>A5</Name>
     </ProjectReference>
   </ItemGroup>
@@ -251,9 +254,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
