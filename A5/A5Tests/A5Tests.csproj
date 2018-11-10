@@ -56,18 +56,10 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="ProgramTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\A5.exe.config" />
-    <None Include="obj\Debug\A5Tests.csproj.CopyComplete" />
-    <None Include="obj\Debug\A5Tests.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\A5Tests.csprojResolveAssemblyReference.cache" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -81,133 +73,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\A5.exe" />
-    <Content Include="bin\Debug\A5.pdb" />
-    <Content Include="bin\Debug\A5Tests.dll" />
-    <Content Include="bin\Debug\A5Tests.pdb" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml" />
-    <Content Include="bin\Debug\TestCommon.dll" />
-    <Content Include="bin\Debug\TestCommon.pdb" />
-    <Content Include="bin\Debug\TestData\TD1\In_1.txt" />
-    <Content Include="bin\Debug\TestData\TD1\In_2.txt" />
-    <Content Include="bin\Debug\TestData\TD1\In_3.txt" />
-    <Content Include="bin\Debug\TestData\TD1\In_4.txt" />
-    <Content Include="bin\Debug\TestData\TD1\In_5.txt" />
-    <Content Include="bin\Debug\TestData\TD1\Out_1.txt" />
-    <Content Include="bin\Debug\TestData\TD1\Out_2.txt" />
-    <Content Include="bin\Debug\TestData\TD1\Out_3.txt" />
-    <Content Include="bin\Debug\TestData\TD1\Out_4.txt" />
-    <Content Include="bin\Debug\TestData\TD1\Out_5.txt" />
-    <Content Include="bin\Debug\TestData\TD2\In_1.txt" />
-    <Content Include="bin\Debug\TestData\TD2\In_2.txt" />
-    <Content Include="bin\Debug\TestData\TD2\In_3.txt" />
-    <Content Include="bin\Debug\TestData\TD2\In_4.txt" />
-    <Content Include="bin\Debug\TestData\TD2\In_5.txt" />
-    <Content Include="bin\Debug\TestData\TD2\Out_1.txt" />
-    <Content Include="bin\Debug\TestData\TD2\Out_2.txt" />
-    <Content Include="bin\Debug\TestData\TD2\Out_3.txt" />
-    <Content Include="bin\Debug\TestData\TD2\Out_4.txt" />
-    <Content Include="bin\Debug\TestData\TD2\Out_5.txt" />
-    <Content Include="bin\Debug\TestData\TD3\In_1.txt" />
-    <Content Include="bin\Debug\TestData\TD3\In_2.txt" />
-    <Content Include="bin\Debug\TestData\TD3\In_3.txt" />
-    <Content Include="bin\Debug\TestData\TD3\In_4.txt" />
-    <Content Include="bin\Debug\TestData\TD3\In_5.txt" />
-    <Content Include="bin\Debug\TestData\TD3\Out_1.txt" />
-    <Content Include="bin\Debug\TestData\TD3\Out_2.txt" />
-    <Content Include="bin\Debug\TestData\TD3\Out_3.txt" />
-    <Content Include="bin\Debug\TestData\TD3\Out_4.txt" />
-    <Content Include="bin\Debug\TestData\TD3\Out_5.txt" />
-    <Content Include="bin\Debug\TestData\TD4\In_1.txt" />
-    <Content Include="bin\Debug\TestData\TD4\In_2.txt" />
-    <Content Include="bin\Debug\TestData\TD4\In_3.txt" />
-    <Content Include="bin\Debug\TestData\TD4\In_4.txt" />
-    <Content Include="bin\Debug\TestData\TD4\In_5.txt" />
-    <Content Include="bin\Debug\TestData\TD4\Out_1.txt" />
-    <Content Include="bin\Debug\TestData\TD4\Out_2.txt" />
-    <Content Include="bin\Debug\TestData\TD4\Out_3.txt" />
-    <Content Include="bin\Debug\TestData\TD4\Out_4.txt" />
-    <Content Include="bin\Debug\TestData\TD4\Out_5.txt" />
-    <Content Include="bin\Debug\TestData\TD5\In_1.txt" />
-    <Content Include="bin\Debug\TestData\TD5\In_2.txt" />
-    <Content Include="bin\Debug\TestData\TD5\In_3.txt" />
-    <Content Include="bin\Debug\TestData\TD5\In_4.txt" />
-    <Content Include="bin\Debug\TestData\TD5\In_5.txt" />
-    <Content Include="bin\Debug\TestData\TD5\Out_1.txt" />
-    <Content Include="bin\Debug\TestData\TD5\Out_2.txt" />
-    <Content Include="bin\Debug\TestData\TD5\Out_3.txt" />
-    <Content Include="bin\Debug\TestData\TD5\Out_4.txt" />
-    <Content Include="bin\Debug\TestData\TD5\Out_5.txt" />
-    <Content Include="bin\Debug\TestData\TD6\In_1.txt" />
-    <Content Include="bin\Debug\TestData\TD6\In_2.txt" />
-    <Content Include="bin\Debug\TestData\TD6\In_3.txt" />
-    <Content Include="bin\Debug\TestData\TD6\In_4.txt" />
-    <Content Include="bin\Debug\TestData\TD6\In_5.txt" />
-    <Content Include="bin\Debug\TestData\TD6\Out_1.txt" />
-    <Content Include="bin\Debug\TestData\TD6\Out_2.txt" />
-    <Content Include="bin\Debug\TestData\TD6\Out_3.txt" />
-    <Content Include="bin\Debug\TestData\TD6\Out_4.txt" />
-    <Content Include="bin\Debug\TestData\TD6\Out_5.txt" />
-    <Content Include="bin\Release\TestData\TD1\In_1.txt" />
-    <Content Include="bin\Release\TestData\TD1\In_2.txt" />
-    <Content Include="bin\Release\TestData\TD1\In_3.txt" />
-    <Content Include="bin\Release\TestData\TD1\In_4.txt" />
-    <Content Include="bin\Release\TestData\TD1\In_5.txt" />
-    <Content Include="bin\Release\TestData\TD1\Out_1.txt" />
-    <Content Include="bin\Release\TestData\TD1\Out_2.txt" />
-    <Content Include="bin\Release\TestData\TD1\Out_3.txt" />
-    <Content Include="bin\Release\TestData\TD1\Out_4.txt" />
-    <Content Include="bin\Release\TestData\TD1\Out_5.txt" />
-    <Content Include="bin\Release\TestData\TD2\In_1.txt" />
-    <Content Include="bin\Release\TestData\TD2\In_2.txt" />
-    <Content Include="bin\Release\TestData\TD2\In_3.txt" />
-    <Content Include="bin\Release\TestData\TD2\In_4.txt" />
-    <Content Include="bin\Release\TestData\TD2\In_5.txt" />
-    <Content Include="bin\Release\TestData\TD2\Out_1.txt" />
-    <Content Include="bin\Release\TestData\TD2\Out_2.txt" />
-    <Content Include="bin\Release\TestData\TD2\Out_3.txt" />
-    <Content Include="bin\Release\TestData\TD2\Out_4.txt" />
-    <Content Include="bin\Release\TestData\TD2\Out_5.txt" />
-    <Content Include="bin\Release\TestData\TD3\In_1.txt" />
-    <Content Include="bin\Release\TestData\TD3\In_2.txt" />
-    <Content Include="bin\Release\TestData\TD3\In_3.txt" />
-    <Content Include="bin\Release\TestData\TD3\In_4.txt" />
-    <Content Include="bin\Release\TestData\TD3\In_5.txt" />
-    <Content Include="bin\Release\TestData\TD3\Out_1.txt" />
-    <Content Include="bin\Release\TestData\TD3\Out_2.txt" />
-    <Content Include="bin\Release\TestData\TD3\Out_3.txt" />
-    <Content Include="bin\Release\TestData\TD3\Out_4.txt" />
-    <Content Include="bin\Release\TestData\TD3\Out_5.txt" />
-    <Content Include="bin\Release\TestData\TD4\In_1.txt" />
-    <Content Include="bin\Release\TestData\TD4\In_2.txt" />
-    <Content Include="bin\Release\TestData\TD4\In_3.txt" />
-    <Content Include="bin\Release\TestData\TD4\In_4.txt" />
-    <Content Include="bin\Release\TestData\TD4\In_5.txt" />
-    <Content Include="bin\Release\TestData\TD4\Out_1.txt" />
-    <Content Include="bin\Release\TestData\TD4\Out_2.txt" />
-    <Content Include="bin\Release\TestData\TD4\Out_3.txt" />
-    <Content Include="bin\Release\TestData\TD4\Out_4.txt" />
-    <Content Include="bin\Release\TestData\TD4\Out_5.txt" />
-    <Content Include="bin\Release\TestData\TD5\In_1.txt" />
-    <Content Include="bin\Release\TestData\TD5\In_2.txt" />
-    <Content Include="bin\Release\TestData\TD5\In_3.txt" />
-    <Content Include="bin\Release\TestData\TD5\In_4.txt" />
-    <Content Include="bin\Release\TestData\TD5\In_5.txt" />
-    <Content Include="bin\Release\TestData\TD5\Out_1.txt" />
-    <Content Include="bin\Release\TestData\TD5\Out_2.txt" />
-    <Content Include="bin\Release\TestData\TD5\Out_3.txt" />
-    <Content Include="bin\Release\TestData\TD5\Out_4.txt" />
-    <Content Include="bin\Release\TestData\TD5\Out_5.txt" />
-    <Content Include="obj\Debug\A5Tests.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\A5Tests.dll" />
-    <Content Include="obj\Debug\A5Tests.pdb" />
     <Content Include="TestData\TD1\In_1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -389,10 +254,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Release\TestData\TD6\" />
-    <Folder Include="obj\Debug\TempPE\" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
