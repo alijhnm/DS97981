@@ -5,10 +5,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{303D841F-63AA-4A00-896C-588A2C3CAC6D}</ProjectGuid>
+    <ProjectGuid>{ABE34EC5-32C4-4194-B95A-2455E8202266}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>A6</RootNamespace>
-    <AssemblyName>A6</AssemblyName>
+    <RootNamespace>A7</RootNamespace>
+    <AssemblyName>A7</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,11 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EditDistance.cs" />
-    <Compile Include="LCSOfThree.cs" />
-    <Compile Include="LCSOfTwo.cs" />
-    <Compile Include="MoneyChange.cs" />
-    <Compile Include="PrimitiveCalculator.cs" />
+    <Compile Include="MaximizingArithmeticExpression.cs" />
+    <Compile Include="MaximumGold.cs" />
+    <Compile Include="PartitioningSouvenirs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
