@@ -45,14 +45,85 @@ namespace E2
 
         public void Reverse()
         {
-            // زحمت بکشید پیاده سازی کنید
-            // اگر نیاز بود میتوانید متد اضافه کنید
+            if (Head.Equals(Tail))
+            {
+                return;
+            }
+
+            else if (Head.Next.Equals(Tail))
+            {
+                Node tmp = Head;
+                tmp.Next = null;
+                tmp.Prev = null;
+                Head = Tail;
+                Head.Prev = null;
+                Head.Next = tmp;
+                tmp.Prev = Head;
+                tmp.Next = null;
+                Tail = tmp;
+                return;
+            }
+
+            int head = Head.Key;
+            Node tail = new Node(Tail.Key);
+
+            Head = Head.Next;
+            Head.Prev = null;
+
+            Tail = Tail.Prev;
+            Tail.Next = null;
+
+            Reverse();
+
+            Head.Prev = tail;
+            tail.Next = Head;
+            Head = tail;
+
+            Insert(head);
+
         }
 
         public void DeepReverse()
         {
-            // زحمت بکشید پیاده سازی کنید
-            // اگر نیاز بود میتوانید متد اضافه کنید
+
+            Node newHead;
+            Node newTail;
+
+            while (true)
+            {
+                if (Head.Equals(Tail))
+                {
+                    break;
+                }
+                else if (Head.Next.Equals(Tail))
+                {
+                    Node tmp = Head;
+                    tmp.Next = null;
+                    tmp.Prev = null;
+
+                    Head = Tail;
+                    Head.Prev = null;
+                    Head.Next = tmp;
+
+                    tmp.Prev = Head;
+                    tmp.Next = null;
+                    Tail = tmp;
+
+                    break;
+                }
+                newHead = Tail;
+                Tail = Tail.Prev;
+                newHead.Prev = null;
+
+                newTail = Head;
+                Head = Head.Next;
+                newTail.Prev = null;
+
+                Head.Prev = newHead;
+                Tail.Next = newTail;
+            }
+            Head = Head.Prev;
+            Tail = Tail.Next;
         }
 
         public IEnumerable<int> GetForwardEnumerator()

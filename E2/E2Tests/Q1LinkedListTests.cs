@@ -14,7 +14,7 @@ namespace E2.Tests
         [TestMethod()]
         public void ReverseTest()
         {
-            Assert.Inconclusive("Not Implemented");
+            //Assert.Inconclusive("Not Implemented");
             Random rnd = new Random(0);
 
             for (int testIteration = 0; testIteration < 10; testIteration++)
@@ -39,7 +39,7 @@ namespace E2.Tests
         [TestMethod(), Timeout(2000)]
         public void ReverseDeepTest()
         {
-            Assert.Inconclusive("Not Implemented");
+            //Assert.Inconclusive("Not Implemented");
             Random rnd = new Random(0);
 
             int[] random = Enumerable.Range(1, 1_000_000)

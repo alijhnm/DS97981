@@ -22,7 +22,34 @@ namespace E2
 
         public int TreeHeight()
         {
-            return 0;
+            List<Node> nodeList = new List<Node>();
+            int nodeCount = Nodes.Length;
+            for (int i = 0; i < nodeCount; i++)
+            {
+                nodeList.Add(new Node(Nodes[i], i));   
+            }
+            if (nodeList.Count == 15)
+            {
+                int a = 0;
+            }
+            long rootValue = -1;
+            Queue<int> q = new Queue<int>();
+            Node root = nodeList[0];
+            root.SetHeight(1);
+            q.Enqueue(root.id);
+            int height;
+            int nextItemId = -1;
+            while (q.Count() > 0)
+            {
+                nextItemId = q.Dequeue();
+                height = nodeList[nextItemId].height;
+                for (int i = 0; i < nodeList[nextItemId].children.Count(); i++)
+                {
+                    nodeList[nodeList[nextItemId].children[i]].SetHeight(height + 1);
+                    q.Enqueue(nodeList[nodeList[nextItemId].children[i]].id);
+                }
+            }
+            return nodeList[nextItemId].height;
         }
 
         public int TreeHeightFromNode(int node)

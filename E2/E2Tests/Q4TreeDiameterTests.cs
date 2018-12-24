@@ -14,14 +14,18 @@ namespace E2.Tests
         [TestMethod()]
         public void Q4TreeDiameterTest()
         {
-            Assert.Inconclusive();
+            //Assert.Inconclusive();
             Q4TreeDiameter td = new Q4TreeDiameter(10, 0);
+            Assert.AreEqual(td.TreeHeight(), 4);
         }
 
         [TestMethod()]
         public void TreeHeightTest()
         {
-            Assert.Inconclusive();
+            Q4TreeDiameter td = new Q4TreeDiameter(10, 0);
+            Q4TreeDiameter td2 = new Q4TreeDiameter(15, 0);
+            Assert.AreEqual(td.TreeHeight(), 4);
+            Assert.AreEqual(td2.TreeHeight(), 4);
         }
 
         [TestMethod()]
