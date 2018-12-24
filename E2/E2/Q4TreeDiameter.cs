@@ -32,7 +32,6 @@ namespace E2
             {
                 int a = 0;
             }
-            long rootValue = -1;
             Queue<int> q = new Queue<int>();
             Node root = nodeList[0];
             root.SetHeight(1);
@@ -54,7 +53,47 @@ namespace E2
 
         public int TreeHeightFromNode(int node)
         {
-            return 0;
+            List<Node> nodeList = new List<Node>();
+            int nodeCount = Nodes.Length;
+            for (int i = 0; i < nodeCount; i++)
+            {
+                nodeList.Add(new Node(Nodes[i], i));
+            }
+            for (int i = 0; i < nodeList.Count; i++)
+            {
+                for (int j = 0; j < nodeList[i].children.Count; j++)
+                {
+                    nodeList[nodeList[i].children[j]].parrent = nodeList[i].id;
+                }
+            }
+            Queue<int> q = new Queue<int>();
+            nodeList[node].SetHeight(1);
+            q.Enqueue(node);
+            int height;
+            int nextItemId = -1;
+            List<int> checkList = new List<int>(0);
+            while (q.Count() > 0)
+            {
+                nextItemId = q.Dequeue();
+                height = nodeList[nextItemId].height;
+                if (!checkList.Contains(nodeList[nodeList[nextItemId].parrent].id))
+                {
+                    nodeList[nodeList[nextItemId].parrent].SetHeight(height + 1);
+                    q.Enqueue(nodeList[nodeList[nextItemId].parrent].id);
+                    checkList.Add(nodeList[nodeList[nextItemId].parrent].id);
+                }
+                for (int i = 0; i < nodeList[nextItemId].children.Count(); i++)
+                {
+                    if (!checkList.Contains(nodeList[nodeList[nextItemId].children[i]].id))
+                    {
+                        nodeList[nodeList[nextItemId].children[i]].SetHeight(height + 1);
+                        q.Enqueue(nodeList[nodeList[nextItemId].children[i]].id);
+                        checkList.Add(nodeList[nodeList[nextItemId].children[i]].id);
+                    }
+                }
+            }
+            return nodeList[nextItemId].height;
+
         }
 
         public int TreeDiameterN2()

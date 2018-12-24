@@ -9,8 +9,9 @@ namespace E2
     class Node
     {
         public List<int> children;
-        public int height;
+        public int height ;
         public int id;
+        public int parrent = -1;
 
         public Node(List<int> children, int id)
         {
