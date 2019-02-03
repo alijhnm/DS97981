@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace A12Tests
 {
-    [TestClass]
+    [TestClass()]//Grade:A12:100
     public class UnitTest1
     {
         [TestMethod]

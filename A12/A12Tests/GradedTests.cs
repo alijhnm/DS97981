@@ -9,7 +9,7 @@ using TestCommon;
 
 namespace A12.Tests
 {
-    [TestClass()]
+    [TestClass()]//Grade:A12:80
     public class GradedTests
     {
         

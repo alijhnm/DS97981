@@ -12,7 +12,7 @@ using System.Diagnostics;
 namespace E2.Tests
 {
     [TestClass()]
-    public class Q2BitCoinTests
+    public class Q2BitCoinTests//Grade:E2.2:0
     {
         public const int DifficultyLevel = 3;
 
